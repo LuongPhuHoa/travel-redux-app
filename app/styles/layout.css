@@ -1,0 +1,24 @@
+.jumbotron {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.33) 100%), url("https://generation-sessions.s3.amazonaws.com/18012a1dd01d701a3efd8ce1e9f56b04/img/rectangle-19290.png"), lightgray 50% / cover no-repeat;
+  height: 976px;
+}
+
+.title {
+  width: 631px;
+  height: 272px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-size: 58.506px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67.908px; /* 116.071% */
+}
+
+.subnav {
+  width: 844px;
+  height: 102px;
+  flex-shrink: 0;
+  border-radius: 5.224px;
+  background: rgba(243, 243, 243, 0.60);
+  backdrop-filter: blur(17.760618209838867px);
+}

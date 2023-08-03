@@ -1,10 +1,11 @@
 /* Components */
-import { Counter } from './components/Counter/Counter'
+import { Home } from "./components/Home/Home"
+
 
 export default function IndexPage() {
-  return <Counter />
+  return <Home />
 }
 
 export const metadata = {
-  title: 'Redux Toolkit',
+  title: 'Travel App with Redux',
 }
