@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../../../styles/styles.css"
 import Card from "../Card";
 
 function BestService() {

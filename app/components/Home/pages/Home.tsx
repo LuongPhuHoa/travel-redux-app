@@ -1,5 +1,4 @@
 import React from "react";
-import { Nav } from "../Nav";
 import { Partners } from "./partner";
 import BestService from "./bestService";
 import Romantic from "./romantic";

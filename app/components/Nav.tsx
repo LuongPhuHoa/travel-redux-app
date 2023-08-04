@@ -2,14 +2,14 @@
 
 /* Core */
 import Link from "next/link";
-import { Button } from "./Button";
+import { Button } from "./Home/Button";
 
 /* Instruments */
 import "../styles/layout.css";
 
 export const Nav = () => {
   return (
-    <section className="bg-center bg-no-repeat jumbotron pl-20">
+    <section className="bg-center bg-no-repeat jumbotron">
       <nav className="bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -39,9 +39,9 @@ export const Nav = () => {
                       className="h-5 w-5"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </span>
@@ -86,7 +86,7 @@ export const Nav = () => {
           </div>
         </div>
       </nav>
-      <div className="px-4 mx-auto max-w-screen-xl text-left py-24 lg:py-56">
+      {/* <div className="px-4 mx-auto max-w-screen-xl text-left py-24 lg:py-56">
         <h1 className="title mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           No matter where you’re going to, we’ll take you there
         </h1>
@@ -106,7 +106,7 @@ export const Nav = () => {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
     </section>
   );
 };

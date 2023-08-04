@@ -12,6 +12,11 @@ export default function RootLayout(props: React.PropsWithChildren) {
   return (
     <Providers>
       <html lang="en">
+        <head>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+          </style>
+        </head>
         <body>
           <Nav />
           {props.children}

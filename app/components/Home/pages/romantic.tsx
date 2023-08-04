@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import "./style.css"
+import "../../../styles/styles.css"
 import { Button } from "../Button";
-import MyImage  from "./public/Illustration.png";
+import MyImage  from "../../../public/Illustration.png";
 import Image from "next/image";
 
 function Romantic() {

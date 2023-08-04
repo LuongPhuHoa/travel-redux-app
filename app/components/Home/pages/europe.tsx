@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css"
+import "../../../styles/styles.css"
 import { Button } from "../Button";
 import Image from "next/image";
-import Destination1 from "./public/Destination 1.png";
-import Destination2 from "./public/Destination 2.png";
-import Destination3 from "./public/Destination 3.png";
-import Destination4 from "./public/Destination 4.png";
-import MyImage  from "./public/Illustration (2).png";
+import Destination1 from "../../../public/Destination 1.png";
+import Destination2 from "../../../public/Destination 2.png";
+import Destination3 from "../../../public/Destination 3.png";
+import Destination4 from "../../../public/Destination 4.png";
+import MyImage  from "../../../public/Illustration (2).png";
 function Europe() {
     return (
         <div className="europe container bg-white py-20 mb-40">
