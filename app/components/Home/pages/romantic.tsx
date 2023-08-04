@@ -2,7 +2,7 @@
 import React from "react";
 import "../../../styles/styles.css"
 import { Button } from "../Button";
-import MyImage  from "../../../public/Illustration.png";
+import MyImage  from "../../../../public/Illustration.png";
 import Image from "next/image";
 
 function Romantic() {

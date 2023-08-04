@@ -9,19 +9,8 @@ import { useState } from "react";
 import "../../../styles/styles.css";
 
 export const Form: FC = () => {
-    // const [search, setSearch] = useState("");
-    // const [location, setLocation] = useState("");
-    // const [date, setDate] = useState("");
-    // const [travel, setTravel] = useState<any[]>([]);
-    // const [filteredTravel, setFilteredTravel] = useState<any[]>([]);
-    // const [sort, setSort] = useState("date");
-    // const [order, setOrder] = useState("asc");
-    
-    // const locationChange = (e: any) => {
-    //     setLocation(e.target.value);
-    // }; 
-    const travel = useLiveQuery(() => TravelTable.toArray(), []);
-    console.log(travel);
+    const travelArr = useLiveQuery(() => TravelTable.toArray(), []);
+    console.log(travelArr);
   return <>
     <div className=" bg-slate-50 mb-10 pb-10">
       <div className="container flex flex-col items-center align-middle justify-center">
@@ -41,18 +30,19 @@ export const Form: FC = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 p-8 bg-white">
           <div className="col-span-2">
-            <div className="grid grid-cols-2 gap-4">
-                <div className="col-span-1">
-                    <TravelCard
-                        title = "Switzerland"
-                        date = "12/12/2021"
-                        group = "120+ People"
-                        image = "https://images.unsplash.com/photo-1519677100203-a0e668c924d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3dpdGNoJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
-                        price = "$1200"
-                        description = "Qui tempore voluptate qui quia commodi rem praesentium alias et."
-                        rating = "5.0"
-                    />
-                </div>
+            <div className="grid grid-cols-2 gap-7">
+              {travelArr?.map((travel) => (
+                <TravelCard
+                  key={travel.id}
+                  title={travel.name}
+                  date={travel.date}
+                  group={travel.group}
+                  price={travel.price}
+                  image={travel.image}
+                  description={travel.description}
+                  rating={travel.rating}
+                />
+              ))}
             </div>
           </div>
           <div className="col-span-1 bg-gray-200 p-1">

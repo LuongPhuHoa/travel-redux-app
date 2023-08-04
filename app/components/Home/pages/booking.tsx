@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import "../../../styles/styles.css"
-import MyImage from "../../../public/Illustration (1).png";
+import MyImage from "../../../../public/Destination 1.png";
 import Image from "next/image";
 
 function Booking() {

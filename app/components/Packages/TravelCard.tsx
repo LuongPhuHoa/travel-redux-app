@@ -8,11 +8,11 @@ import {
     Button,
   } from "@material-tailwind/react";
 
-export const TravelCard = ({title, date, group, price, image, description, rating}: any) => {
+export const TravelCard = ({key, title, date, group, price, image, description, rating}: any) => {
   return (
-    <Card className="mt-6 w-96 hover:scale-125 p-10">
-      <CardHeader color="blue-gray" className="relative h-56">
-        <img
+    <Card className="mt-6 w-96 hover:scale-110 p-10 shadow-transparent hover:shadow-neutral-300" key={key}>
+      <CardHeader color="blue-gray" className="relative h-50">
+        <img className="object-cover w-full h-full rounded-2xl"
           src={image}
           alt="card-image"
         />
@@ -34,7 +34,6 @@ export const TravelCard = ({title, date, group, price, image, description, ratin
           <Typography color="blue-gray">{price}</Typography>
           <Typography color="blue-gray">{rating}</Typography>
         </div>
-        <Button>Read More</Button>
       </CardFooter>
     </Card>
   );
